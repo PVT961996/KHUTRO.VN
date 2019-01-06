@@ -1,0 +1,129 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "title",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "required,max:255",
+        "slug": true
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer:unsigned:foreign,users,id",
+        "htmlType": "text",
+        "relation": "mt1,User,user_id,id"
+    },
+    {
+        "name": "motel_category_id",
+        "dbType": "integer:unsigned:foreign,motel_categories,id",
+        "htmlType": "text",
+        "relation": "mt1,MotelCategory,motel_category_id,id"
+    },
+    {
+        "name": "short_description",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "image_title",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "address",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "area",
+        "dbType": "integer",
+        "htmlType": "number",
+        "validations": "max:1000000"
+    },
+    {
+        "name": "province_id",
+        "dbType": "integer:unsigned:foreign,provinces,id",
+        "htmlType": "text",
+        "relation": "mt1,Province,province_id,id"
+    },
+    {
+        "name": "district_id",
+        "dbType": "integer:unsigned:foreign,districts,id",
+        "htmlType": "text",
+        "relation": "mt1,District,district_id,id"
+    },
+    {
+        "name": "town_id",
+        "dbType": "integer:unsigned:foreign,towns,id",
+        "htmlType": "text",
+        "relation": "mt1,Town,town_id,id"
+    },
+    {
+        "name": "due_date",
+        "dbType": "timestamp",
+        "htmlType": "datetime"
+    },
+    {
+        "name": "content",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "seo_title",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "seo_tag",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:50"
+    },
+    {
+        "name": "seo_description",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:500"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "slug",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required"
+    }
+]

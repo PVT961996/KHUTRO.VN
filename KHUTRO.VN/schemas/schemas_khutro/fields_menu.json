@@ -1,0 +1,60 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "name",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "model_id",
+        "dbType": "integer:unsigned:foreign,modelms,id",
+        "htmlType": "text",
+        "relation": "mt1,Modelm,model_id,id"
+    },
+    {
+        "name": "action_id",
+        "dbType": "integer:unsigned:foreign,actions,id",
+        "htmlType": "text",
+        "relation": "mt1,Actionm,action_id,id"
+    },
+    {
+        "name": "description",
+        "dbType": "text",
+        "htmlType": "text",
+        "searchable": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

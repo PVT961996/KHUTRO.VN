@@ -1,0 +1,82 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "name",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "required,max:255"
+    },
+    {
+        "name": "motel_id",
+        "dbType": "integer:unsigned:foreign,motels,id",
+        "htmlType": "text",
+        "relation": "mt1,Motel,motel_id,id"
+    },
+    {
+        "name": "area",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "number_people",
+        "dbType": "integer:unsigned",
+        "htmlType": "number",
+        "validations": "max:100"
+    },
+    {
+        "name": "price",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "status",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "toilet",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "radio,Khép Kín,Chung"
+    },
+    {
+        "name": "description",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "name": "bloomgoo/swagger-generator",
+    "description": "Swagger Generator for BLOOMGOO Laravel Generator",
+    "keywords": [
+        "laravel",
+        "swagger",
+        "templates",
+        "generator"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BLOOMGOO.VN",
+            "email": "developer@bloomgoo.vn"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    }
+}

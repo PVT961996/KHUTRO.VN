@@ -1,0 +1,88 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "title",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "required,max:255",
+        "slug": true
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer:unsigned:foreign,users,id",
+        "htmlType": "text",
+        "relation": "mt1,User,user_id,id"
+    },
+    {
+        "name": "short_description",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "content",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "image_title",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "seo_title",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "seo_tag",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:50"
+    },
+    {
+        "name": "seo_description",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:500"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "slug",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required"
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "sevice_id",
+        "dbType": "integer:unsigned:foreign,sevices,id",
+        "htmlType": "text",
+        "relation": "mt1,Sevice,device_id,id"
+    },
+    {
+        "name": "motel_id",
+        "dbType": "integer:unsigned:foreign,motels,id",
+        "htmlType": "text",
+        "relation": "mt1,Motel,motel_id,id"
+    },
+
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

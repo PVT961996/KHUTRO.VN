@@ -1,0 +1,106 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "field_name",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "required,max:255",
+        "slug": true
+    },
+    {
+        "name": "motel_category_id",
+        "dbType": "integer:unsigned:foreign,motel_categories,id",
+        "htmlType": "text",
+        "relation": "mt1,MotelCategory,motel_category_id,id"
+    },
+    {
+        "name": "description",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "html_type",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "db_type",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "default_value",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "location",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "icon",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "image",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "class_css",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "max:255"
+    },
+    {
+        "name": "order",
+        "dbType": "integer",
+        "htmlType": "number",
+        "validations": "required,max:50"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "slug",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required"
+    }
+]

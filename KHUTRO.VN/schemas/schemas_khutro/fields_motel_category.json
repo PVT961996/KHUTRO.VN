@@ -1,0 +1,59 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "name",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required|max:255",
+    "searchable": true,
+    "slug": true
+  },
+  {
+    "name": "description",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "parent_id",
+    "dbType": "integer:unsigned:foreign,motel_categories,id",
+    "htmlType": "text",
+    "relation": "mt1,MotelCategory,parent_id,id"
+  },
+  {
+    "name": "slug",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  }
+]
